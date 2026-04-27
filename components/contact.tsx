@@ -1,7 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, Youtube } from "lucide-react"
+import { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Instagram,
+  Facebook,
+  Youtube,
+} from "lucide-react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -9,29 +17,31 @@ export function Contact() {
     email: "",
     subject: "",
     message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
+    e.preventDefault();
+    setIsSubmitting(true);
+
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    setSubmitted(true)
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    
-    setTimeout(() => setSubmitted(false), 3000)
-  }
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    setIsSubmitting(false);
+    setSubmitted(true);
+    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    setTimeout(() => setSubmitted(false), 3000);
+  };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <section id="contato" className="py-24 bg-secondary/30">
@@ -46,7 +56,7 @@ export function Contact() {
           </h2>
           <div className="w-16 h-px bg-primary mx-auto mb-8" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Para contratações, aulas particulares ou qualquer outra informação, 
+            Para contratações, aulas particulares ou qualquer outra informação,
             entre em contato através do formulário ou pelos canais abaixo.
           </p>
         </div>
@@ -87,7 +97,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-medium mb-1">Localização</h4>
                   <p className="text-muted-foreground">
-                    Interior de São Paulo, Brasil
+                    Americana, São Paulo, Brasil
                   </p>
                 </div>
               </div>
@@ -98,21 +108,27 @@ export function Contact() {
               <h4 className="font-medium mb-4">Redes Sociais</h4>
               <div className="flex items-center gap-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/franchiwilson/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100067827196846"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@programacafeeviola8840"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   aria-label="YouTube"
                 >
@@ -257,5 +273,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

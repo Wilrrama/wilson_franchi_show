@@ -77,21 +77,27 @@ export function Hero() {
         {/* Social Links */}
         <div className="flex items-center justify-center gap-6">
           <a
-            href="#"
+            href="https://www.instagram.com/franchiwilson/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
             aria-label="Instagram"
           >
             <Instagram className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/profile.php?id=100067827196846"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
             aria-label="Facebook"
           >
             <Facebook className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@programacafeeviola8840"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
             aria-label="YouTube"
           >
