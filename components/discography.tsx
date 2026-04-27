@@ -8,7 +8,7 @@ const albums = [
     id: 1,
     title: "Natureza e Vida",
     year: "2023",
-    cover: "/images/natureza_e_vida.jpg",
+    cover: "/images/natureza_e_vida.png",
     tracks: [
       {
         name: "Ramalhete com Amor",
@@ -56,7 +56,7 @@ const albums = [
     id: 2,
     title: "Rei do Sertão",
     year: "2021",
-    cover: "/images/rei_do_sertao.jpg",
+    cover: "/images/rei_do_sertao.png",
     tracks: [
       { name: "Caminheiro", src: "/audio/rei_do_sertao/faixa_1.mp3" },
       { name: "Minha Faculdade", src: "/audio/rei_do_sertao/Faixa_2.mp3" },
@@ -200,7 +200,7 @@ export function Discography() {
                 <img
                   src={album.cover}
                   alt={album.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </button>
             ))}

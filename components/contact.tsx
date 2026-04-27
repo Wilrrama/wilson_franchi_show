@@ -87,7 +87,7 @@ export function Contact() {
                     href="tel:+5511999999999"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    (11) 99999-9999
+                    (19) 99781-8648
                   </a>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export function Contact() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Segunda a Sexta</span>
-                  <span>09:00 - 18:00</span>
+                  <span>09:00 - 17:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Sábado</span>
