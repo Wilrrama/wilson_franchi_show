@@ -6,8 +6,8 @@ const courses = [
   {
     id: 1,
     icon: Music,
-    title: "Violão Caipira",
-    description: "Aprenda as técnicas tradicionais do violão caipira, desde os acordes básicos até os padrões rítmicos característicos do sertanejo raiz.",
+    title: "Viola Caipira",
+    description: "Aprenda as técnicas tradicionais do viola caipira, desde os acordes básicos até os padrões rítmicos característicos do sertanejo raiz.",
     features: [
       "Técnicas de mão direita e esquerda",
       "Ritmos caipiras tradicionais",
@@ -50,12 +50,12 @@ const courses = [
 const testimonials = [
   {
     name: "Carlos Eduardo",
-    location: "São Paulo, SP",
+    location: "Amparo, SP",
     text: "As aulas com o professor Wilson mudaram completamente minha forma de tocar. A dedicação e o conhecimento dele são impressionantes.",
   },
   {
     name: "Maria Helena",
-    location: "Ribeirão Preto, SP",
+    location: "Americana, SP",
     text: "Sempre sonhei em aprender violão caipira e encontrei no Wilson o professor ideal. Paciente, didático e muito talentoso.",
   },
 ]

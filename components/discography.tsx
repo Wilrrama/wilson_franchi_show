@@ -73,6 +73,18 @@ const albums = [
       { name: "Pagode Original", src: "/audio/rei_do_sertao/Faixa_10.mp3" },
     ],
   },
+  {
+    id: 3,
+    title: "Hino Santa Albertina",
+    year: "2021",
+    cover: "/images/hino_albertina.png",
+    tracks: [
+      {
+        name: "Hino de Santa Albertina",
+        src: "/audio/hino_sta_albertina/hino_sta_albertina.mp3",
+      },
+    ],
+  },
 ];
 
 export function Discography() {

@@ -169,17 +169,17 @@ const galleryItems = [
   {
     id: 24,
     type: "video",
-    src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    thumbnail: "/images/video-thumb-2.jpg",
-    alt: "Apresentação acústica",
+    src: "/video/Champagne_Peppino_di_Capri.mp4",
+    thumbnail: "/video/Champagne_Peppino_di_Capri.png",
+    alt: "Apresentação ao vivo",
     category: "Vídeos",
   },
   {
     id: 25,
     type: "video",
-    src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    thumbnail: "/images/video-thumb-1.jpg",
-    alt: "Clipe oficial",
+    src: "https://www.youtube.com/embed/3livsQgme1I",
+    thumbnail: "/video/sta_albertina.png",
+    alt: "Clipe Sta Albertina",
     category: "Vídeos",
   },
 ];
